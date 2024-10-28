@@ -1,0 +1,56 @@
+body,
+html {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgb(60, 97, 153);
+	touch-action: none;
+}
+
+svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #c9c9c9;
+	cursor: pointer;
+	filter: sepia(20%);
+}
+
+svg use {
+	fill: inherit;
+}
+
+#controls {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+
+#speedControl {
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	background: linear-gradient(135deg, #4a90e2, #357abd);
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+#speedControl:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+	background: linear-gradient(135deg, #357abd, #2868a9);
+}
+
+#speedControl:active {
+	transform: translateY(1px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
